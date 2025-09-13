@@ -9,12 +9,6 @@ Ein kleiner, anschaulicher Task-Manager zum Hinzufügen, Abhaken, Suchen und Lö
 - 🗓️ Monatskalender (FullCalendar)
 - 💾 Persistenz via `localStorage`
 
-## 📂 Projektstruktur
-├─ index.html
-├─ styles.css
-├─ app.js
-└─ README.md
-
 ## ▶️ Quickstart 
 1. gehe auf den Link: https://taskmanagerleandro.netlify.app/
 
