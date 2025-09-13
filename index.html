@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Manager + Kalender</title>
+
+  
+  <link rel="stylesheet" href="./styles.css"/>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.css" rel="stylesheet">
+</head>
+<body>
+  <main class="container">
+    <h1>📝 Task Manager</h1>
+
+    <form id="task-form" autocomplete="off">
+      <input id="task-input" type="text" placeholder="Neue Aufgabe eingeben…" required />
+      <input id="task-date" type="date" aria-label="Fällig am" />
+      <button type="submit">Hinzufügen</button>
+    </form>
+
+    <div class="toolbar">
+      <input id="search" type="text" placeholder="Suchen…" />
+      <select id="filter">
+        <option value="all">Alle</option>
+        <option value="open">Offen</option>
+        <option value="done">Erledigt</option>
+      </select>
+      <button id="clear-done" type="button">Erledigte löschen</button>
+    </div>
+
+    <ul id="task-list" class="task-list"></ul>
+
+    <div class="calendar-wrap">
+      <h2>📅 Kalender</h2>
+      <div id="calendar"></div>
+    </div>
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+
+  <script src="./app.js"></script>
+</body>
+</html>
